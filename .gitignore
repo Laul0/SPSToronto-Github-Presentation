@@ -19,6 +19,10 @@ coverage
 # OSX
 .DS_Store
 
+# Windows
+Thumbs.db
+desktop.ini
+
 # Visual Studio files
 .ntvs_analysis.dat
 .vs

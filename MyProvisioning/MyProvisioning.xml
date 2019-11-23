@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.15.1911.0, Culture=neutral, PublicKeyToken=5e633289e95c321a">
+        <pnp:Parameters>
+            <pnp:Parameter Key="Company">SharePoint Saturday Toronto 2019</pnp:Parameter>
+            <pnp:Parameter Key="siteTitle">SharePoint Saturday Toronto 2019 Demo</pnp:Parameter>
+            <pnp:Parameter Key="relativeSiteUrl">/sites/sps-toronto-demo-19</pnp:Parameter>
+        </pnp:Parameters>
+    </pnp:Preferences>
+    <pnp:Localizations>
+        <pnp:Localization LCID="1033" Name="sps" ResourceFile="resources\resources-sps.en-us.resx"/>
+        <pnp:Localization LCID="1036" Name="sps" ResourceFile="resources\resources-sps.fr-fr.resx"/>
+    </pnp:Localizations>
+    <pnp:Sequence ID="SPS-TORONTO-SEQUENCE">
+        <pnp:SiteCollections>
+            <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" SiteDesign="Blank" ProvisioningId="SPS-SITE" Title="{parameter:siteTitle}" Description="" Url="{parameter:relativeSiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+                <pnp:Templates>
+                    <pnp:ProvisioningTemplateReference ID="SPS-TORONTO-LIBRARY"/>
+                </pnp:Templates>
+            </pnp:SiteCollection>
+        </pnp:SiteCollections>
+    </pnp:Sequence>
+    <pnp:Templates ID="SPS-TORONTO-TEMPLATES">
+        <pnp:ProvisioningTemplate ID="SPS-TORONTO-LIBRARY" Version="1">
+            <pnp:Lists>
+                <pnp:ListInstance Title="SPS Toronto 2019" Description="" TemplateType="101" Url="spstoronto19" EnableVersioning="true" MinorVersionLimit="500" MaxVersionLimit="500" DraftVersionVisibility="1" EnableAttachments="false" ImageUrl="/_layouts/15/images/itdl.png?rev=44"></pnp:ListInstance>
+            </pnp:Lists>
+        </pnp:ProvisioningTemplate>
+    </pnp:Templates>
+</pnp:Provisioning>
