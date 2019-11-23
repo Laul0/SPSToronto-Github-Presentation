@@ -1,3 +1,5 @@
 # v.0.1
 
-Init the repoository
+feat: provisioning structure
+feat: init SPFx component
+feat: documentation
