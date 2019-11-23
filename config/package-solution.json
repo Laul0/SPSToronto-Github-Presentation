@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sps-toronto-web-part-client-side-solution",
+    "id": "fae2ee53-1a2c-466c-b491-277acf9ca5d8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/sps-toronto-web-part.sppkg"
+  }
+}
